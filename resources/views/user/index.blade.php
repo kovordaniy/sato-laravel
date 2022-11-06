@@ -1,5 +1,4 @@
-@extends('layouts.index')
-@section('content')
+<x-app-layout>
 
     @if ($user = Session::get('success'))
         <div class="alert">
@@ -79,4 +78,5 @@
             </div>
         </div>
     </div>
-@stop
+
+</x-app-layout>

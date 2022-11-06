@@ -15,7 +15,9 @@
     </head>
     <body>
         <div class="font-sans text-gray-900 antialiased">
-            {{ $slot }}
+            <div class="max-w-6xl mx-auto px-4 py-8">
+                {{ $slot }}
+            </div>
         </div>
 
         <script type="text/javascript" src="{{ asset('js/app.js') }}""></script>

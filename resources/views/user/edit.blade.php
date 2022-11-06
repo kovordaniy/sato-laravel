@@ -1,5 +1,4 @@
-@extends('layouts.index')
-@section('content')
+<x-app-layout>
     <div class="flex justify-between items-center space-x-8 mb-4">
         <h1>Edit</h1>
     </div>
@@ -34,4 +33,4 @@
         <button type="submit" class="button large">Update</button>
         <a type="button" href="{{ route('users.index') }}" class="button large link">Cancel</button>
     </form>
-@stop
+</x-app-layout>

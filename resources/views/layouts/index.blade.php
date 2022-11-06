@@ -19,14 +19,18 @@
                     <a href="{{ url('/') }}">Home</a>
                 </li>
                 <li>
-                    <a href="{{ route('users.index') }}">Users</a>
+                    <a href="{{ route('dashboard') }}">Dashboard</a>
+                </li>
+                <li>
+                    <a href="{{ route('login') }}">Login</a>
+                </li>
+                <li>
+                    <a href="{{ route('register') }}">Register</a>
                 </li>
             </ul>
         </div>
         <div class="max-w-6xl mx-auto px-4 py-8">
-            <div class="">
-                @yield('content')
-            </div>
+            @yield('content')
         </div>
 
         <script type="text/javascript" src="{{ asset('js/app.js') }}""></script>

@@ -1,5 +1,4 @@
-@extends('layouts.index')
-@section('content')
+<x-app-layout>
     <div class="flex justify-between items-center space-x-8 mb-4">
         <h1>View</h1>
     </div>
@@ -18,4 +17,4 @@
         <a type="button" href="{{ route('users.edit', $user) }}" class="button large">Edit</a>
         <a type="button" href="{{ route('users.index') }}" class="button large link">Back</button>
     </div>
-@stop
+</x-app-layout>
