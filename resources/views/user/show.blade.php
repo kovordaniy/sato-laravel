@@ -3,15 +3,15 @@
         <h1>View</h1>
     </div>
 
-    <div class="form-group">
-        <label for="name">Name</label>
-        <input type="name" value="{{ $user->name }}" disabled readonly name="name" id="name">
-    </div>
+    <x-form-group>
+        <x-label for="name">Name</x-label>
+        <x-input type="name" value="{{ $user->name }}" disabled readonly name="name" id="name" />
+    </x-form-group>
 
-    <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" value="{{ $user->email }}" disabled readonly name="email" id="email">
-    </div>
+    <x-form-group>
+        <x-label for="email">Email</x-label>
+        <x-input type="email" value="{{ $user->email }}" disabled readonly name="email" id="email" />
+    </x-form-group>
 
     <div>
         <a type="button" href="{{ route('users.edit', $user) }}" class="button large">Edit</a>
