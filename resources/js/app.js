@@ -1,5 +1,12 @@
-require('./bootstrap');
+import './bootstrap';
 
+import Alpine from 'alpinejs';
+
+window.Alpine = Alpine;
+
+Alpine.start();
+
+// Modal
 function openUserDeleteModal(name, action) {
     const modalElement = document.getElementById('delete-user-modal');
     if (!modalElement) {
