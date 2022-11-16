@@ -1,16 +1,15 @@
-@extends('layouts.index')
-@section('content')
+<x-app-layout>
 
     @if ($user = Session::get('success'))
-        <div class="alert">
+        <x-alert>
             User {{ $user->name }} has been created!
-        </div>
+        </x-alert>
     @endif
 
     @if ($user = Session::get('delete.success'))
-        <div class="alert">
+        <x-alert>
             User {{ $user->name }} has been deleted!
-        </div>
+        </x-alert>
     @endif
 
     <div class="flex justify-between items-center space-x-8 mb-4">
@@ -79,4 +78,5 @@
             </div>
         </div>
     </div>
-@stop
+
+</x-app-layout>

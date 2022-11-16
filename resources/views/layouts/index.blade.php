@@ -11,11 +11,6 @@
 
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        <style>
-            body {
-                font-family: 'Nunito', sans-serif;
-            }
-        </style>
     </head>
     <body class="antialiased bg-gray-100">
         <div class="bg-stone-800 text-white">
@@ -24,14 +19,18 @@
                     <a href="{{ url('/') }}">Home</a>
                 </li>
                 <li>
-                    <a href="{{ route('users.index') }}">Users</a>
+                    <a href="{{ route('dashboard') }}">Dashboard</a>
+                </li>
+                <li>
+                    <a href="{{ route('login') }}">Login</a>
+                </li>
+                <li>
+                    <a href="{{ route('register') }}">Register</a>
                 </li>
             </ul>
         </div>
         <div class="max-w-6xl mx-auto px-4 py-8">
-            <div class="">
-                @yield('content')
-            </div>
+            @yield('content')
         </div>
 
         <script type="text/javascript" src="{{ asset('js/app.js') }}""></script>
